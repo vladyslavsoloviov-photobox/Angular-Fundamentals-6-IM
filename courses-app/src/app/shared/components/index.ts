@@ -1,6 +1,7 @@
 export * from './button/button.component';
 export * from './course-card/course-card.component';
 export * from './course-form/course-form.component';
+export * from './course-list/course-list.component';
 export * from './header/header.component';
 export * from './info/info.component';
 export * from './login-form/login-form.component';
