@@ -11,12 +11,14 @@
   min-height: 170px;
   width: 80vw;
   background-color: $color-white;
+  font-family: 'Open Sans';
 
   &__description {
     flex: 2;
 
     &-title {
       font-weight: bold;
+      font-size: 20px;
     }
   }
 
