@@ -10,9 +10,11 @@ import {
   CourseCardComponent,
   LoginFormComponent,
   RegistrationFormComponent,
-  CourseFormComponent
+  CourseFormComponent,
+  IconButtonComponent,
 } from "./components";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { DurationPipe } from './pipes/duration.pipe';
 
 const components = [
   HeaderComponent,
@@ -23,7 +25,9 @@ const components = [
   CourseCardComponent,
   LoginFormComponent,
   RegistrationFormComponent,
-  CourseFormComponent
+  CourseFormComponent,
+  DurationPipe,
+  IconButtonComponent,
 ];
 
 @NgModule({

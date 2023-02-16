@@ -9,13 +9,15 @@
               <b>Authors: </b>
               {{ authors }}
             </div>
-            <div><b>Duration: </b>{{ duration }}</div>
-            <div><b>Created: </b>{{ creationDate }}</div>
+            <div><b>Duration: </b>{{ duration | duration }}</div>
+            <div><b>Created: </b>{{ creationDate | date: 'd.MM.y' }}</div>
         </div>
         <div class="course-card__info-actions">
             <app-button text="Show course"></app-button>
-            <fa-icon icon="coffee"></fa-icon>
-            <fa-icon icon="coffee"></fa-icon>
+            <ng-template [ngIf]="editable">
+              <app-icon-button><fa-icon class="course-card__icon" icon="trash"></fa-icon></app-icon-button>
+              <app-icon-button><fa-icon class="course-card__icon" icon="edit"></fa-icon></app-icon-button>
+            </ng-template>
         </div>
     </div>
 </div>

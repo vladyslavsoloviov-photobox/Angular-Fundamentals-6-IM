@@ -33,4 +33,15 @@
       margin-top: 16px;
     }
   }
+
+  &__info-actions {
+    display: flex;
+  }
+
+  &__icon {
+    font-size: 38px;
+    color: #007298;
+    display: block;
+    margin-left: 25px;
+  }
 }

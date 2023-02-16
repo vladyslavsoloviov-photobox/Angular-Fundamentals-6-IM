@@ -8,3 +8,4 @@ export * from './login-form/login-form.component';
 export * from './modal/modal.component';
 export * from './registration-form/registration-form.component';
 export * from './search/search.component';
+export * from './icon-button/icon-button.component';
