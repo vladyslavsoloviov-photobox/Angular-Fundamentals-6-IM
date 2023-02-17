@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ICourse } from 'src/app/interfaces';
 
 @Component({
@@ -15,6 +15,8 @@ export class CourseCardComponent {
 
   @Input() editable: boolean;
   @Input() course: ICourse;
+
+  @Output() editableChange = new EventEmitter<boolean>();
 
   ngOnInit() {
     this.title = this.course.title;
