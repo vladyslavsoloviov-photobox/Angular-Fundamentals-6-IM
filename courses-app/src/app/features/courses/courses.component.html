@@ -1,0 +1,12 @@
+<app-course-list
+    [courses]="courses"
+    [editable]="editable"
+    (modalChange)="modalOpened = $event"
+></app-course-list>
+<app-modal *ngIf="modalOpened"
+    [title]="'title'"
+    [message]="'message'"
+    [okButtonText]="'okButtonText'"
+    [cancelButtonText]="'cancelButtonText'"
+    (res)="modalOpened = false"
+></app-modal>
