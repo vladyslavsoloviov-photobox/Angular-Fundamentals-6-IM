@@ -24,4 +24,5 @@ export class CoursesComponent {
     },
   ];
   editable = true;
+  modalOpened = false;
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ICourse } from 'src/app/interfaces';
 
 @Component({
@@ -9,5 +9,10 @@ import { ICourse } from 'src/app/interfaces';
 export class CourseListComponent {
   @Input() courses: ICourse[];
   @Input() editable: boolean;
-  items = ["Tom", "Bob", "Sam", "Bill"];
+
+  @Output() modalChange = new EventEmitter<boolean>();
+
+  openModal() {
+    this.modalChange.emit(true);
+  }
 }

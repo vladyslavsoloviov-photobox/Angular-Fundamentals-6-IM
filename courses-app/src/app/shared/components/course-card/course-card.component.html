@@ -13,7 +13,7 @@
             <div><b>Created: </b>{{ creationDate | date: 'd.MM.y' }}</div>
         </div>
         <div class="course-card__info-actions">
-            <app-button text="Show course"></app-button>
+            <app-button (click)="openModal()" text="Show course"></app-button>
             <ng-template [ngIf]="editable">
               <app-icon-button><fa-icon class="course-card__icon" icon="trash"></fa-icon></app-icon-button>
               <app-icon-button><fa-icon class="course-card__icon" icon="edit"></fa-icon></app-icon-button>

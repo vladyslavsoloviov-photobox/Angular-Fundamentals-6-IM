@@ -16,7 +16,7 @@ export class CourseCardComponent {
   @Input() editable: boolean;
   @Input() course: ICourse;
 
-  @Output() editableChange = new EventEmitter<boolean>();
+  @Output() modalChange = new EventEmitter<boolean>();
 
   ngOnInit() {
     this.title = this.course.title;
@@ -24,5 +24,9 @@ export class CourseCardComponent {
     this.creationDate = this.course.creationDate;
     this.duration = this.course.duration;
     this.authors = this.course.authors;
+  }
+
+  openModal() {
+    this.modalChange.emit(true);
   }
 }
