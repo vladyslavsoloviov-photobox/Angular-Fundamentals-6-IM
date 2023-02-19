@@ -13,7 +13,7 @@ export class ModalComponent {
   @Input() okButtonText: string;
   @Input() cancelButtonText: string;
 
-  @Output() result = new EventEmitter<boolean>();
+  @Output() res = new EventEmitter<boolean>();
 
   @ViewChild('backdrop') backdrop:ElementRef;
 
@@ -22,7 +22,7 @@ export class ModalComponent {
   }
 
   doResult(res: boolean) {
-    this.result.emit(res);
+    this.res.emit(res);
   }
 
   backdropClick(event: Event) {

@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { ICourse } from 'src/app/interfaces';
 
 @Component({
@@ -6,7 +6,7 @@ import { ICourse } from 'src/app/interfaces';
   templateUrl: './course-card.component.html',
   styleUrls: ['./course-card.component.scss']
 })
-export class CourseCardComponent {
+export class CourseCardComponent implements OnInit {
   title: string;
   description: string;
   creationDate: Date;
