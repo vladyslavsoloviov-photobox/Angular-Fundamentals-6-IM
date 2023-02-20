@@ -4,6 +4,7 @@ import { CoursesModule } from './features/courses/courses.module';
 import { CourseModule } from './features/course/course.module';
 import { LoginModule } from './features/login/login.module';
 import { RegistrationModule } from './features/registration/registration.module';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 
@@ -17,6 +18,7 @@ import { AppComponent } from './app.component';
     CourseModule,
     LoginModule,
     RegistrationModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
